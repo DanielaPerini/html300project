@@ -1,0 +1,29 @@
+The purpose of this redesign is to make people more interested in the product by making the website look better and more modern and also making it easier and more pleasent to use.
+
+The website has poor accessibility - on my research I found more than 20 errors based on the subject. It is not responsive, the clicable elements are too close and text is too small which makes it not mobile friendly. The performace can be improved by compressing images for example, since the load time is about 4,17 seconds. Even though it is very confusing it still has all the content it needs to, making its functionality good but not pleasant to use.
+
+User research:
+-Govern: since it is a organization created by the government they will check the website to make sure the project is always improving.
+-Industry: companies looking for better ways to produce energy.
+-Students: 17+ years old, looking for information about new sources of energy or classes about the subject.
+-Teachers: 25+ years old, looking for information about new sources of energy or ways to improve their knowledge.
+-Universities: interested in being part of the studies.
+-People searching for new energy sources: 18+, looking for new energy sources for their own use.
+-People searching for jobs: 18+, looking for jobs in the energy area.
+
+It would be interesting to have the website running well in older browsers as well as newer versions.
+
+Recommendations:
+Here I list some of the chages to be done:
+-New design: we would change menus' positions and organize the sub sections, make a new color and font scheme and make it more modern.
+-Make it mobile friendly: there are lots of changes to be done to make it responsive.
+-Optimize performace: the website takes too long to load and it can be fixed by compressing images.
+-Better accessibility: adding alt tags to all the images to make it accessible.
+-Make sure it works in most browsers possible.
+
+
+
+
+
+
+
