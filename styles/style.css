@@ -1,16 +1,79 @@
-/* ****** MAIN FONT/COLORS STYLES ****** */
+/* ****** MAIN FONT/COLORS STYLES AND WRAPPERS ****** */
 body h1 {
   font-family: "Old Standard TT", serif;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 40px;
+  color: #263995;
+  padding-bottom: 4rem;
+  margin: auto;
+  width: 100%;
+}
+
+body h3 {
+  font-family: "Old Standard TT", serif;
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 3rem;
 }
 
 body p {
   font-family: "Merriweather Sans", sans-serif;
   font-weight: 300;
   font-size: 14px;
+  padding-bottom: 4rem;
 }
 
+.main-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 70%;
+  height: auto;
+  padding: 2rem;
+  margin: 3rem auto;  
+}
+
+.footer-wrapper {
+  clear: both;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  padding: 2rem 0rem;
+  margin: 3rem 0rem 0rem 3rem auto;   
+  background-color: #e9e9e9;
+}
+
+.summit {
+  width: 100%;
+  margin-left: 9rem;
+  margin-bottom: 5rem;
+  
+}
+
+.summit-home {
+  width: 100%;
+  margin-left: 9rem;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+
+.main-contact{
+   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: auto;
+  padding: 5rem;
+  margin: 3rem 0rem 0rem 3rem auto;
+  float:left; 
+}
+
+.map{
+  float:right;
+  width: 50%;
+  padding: 0rem 2rem;
+}
 
 
 /* ******* TOP NAV ****** */
@@ -55,7 +118,7 @@ body p {
     font-size: 17px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 736px) {
     .topnav a, .topnav input[type=text] {
         flex-direction: column;
         text-align: center;
