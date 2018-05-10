@@ -1,8 +1,8 @@
 $title: #263995;
 $subtitle: #007B44;
 $highlight: #FF6C00;
-$menuBackground: #e9e9e9;
-$difBackground: #e9e9e9 ;
+$menuBackground: #e8ebf9 ;
+$difBackground: #e8ebf9 ;
 
 
 body {
@@ -32,7 +32,7 @@ body {
     font-size: 16px;
     padding: 3rem 0rem;
     text-align: center;
-    line-height: 20px;
+    line-height: 30px;
   }
   
     h4 {
@@ -44,6 +44,41 @@ body {
       text-decoration: none;
       color: $subtitle;
     }
+  }
+}
+
+header {
+  background-color: $difBackground;
+  
+  img {
+    padding: 3rem;
+  }
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: $menuBackground;
+    a {
+      float: left;
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      border-left: 1px solid $title;
+      transition: opacity 1s;
+      opacity: 0.8; 
+
+      &:hover {
+        background-color: #ddd;
+        color: black;
+        opacity: 1; 
+      }
+      &.active{
+        background-color: $highlight;
+        color: white;
+      }
   }
 }
 
@@ -151,6 +186,10 @@ body {
   float:left;
   width: 50%;
   
+  img {
+    padding: 1rem;
+  }
+  
   h3 {
     padding: 1rem;
     float: left;
@@ -158,9 +197,9 @@ body {
   
   p {
     float: right;
-    padding: 0rem;
+    padding: 1rem;
     text-align: left;
-    width: 50%;
+    width: 100%;
   }
 }
 
@@ -171,16 +210,20 @@ body {
   float:right;
   width: 50%;
   
+  img {
+    padding: 1rem;
+  }
+  
   h3 {
-    padding: 0rem;
+    padding: 1rem;
     float: right;
   }
   
   p {
     float: right;
-    padding: 0rem;
+    padding: 1rem;
     text-align: left;
-    width: 50%;
+    width: 100%;
   }
 }
 
@@ -220,6 +263,10 @@ body {
   
   h4 {    
     padding: 1rem 4rem 6rem;
+    
+    a i{
+      padding: 1rem;
+    }
   }
 }
 
@@ -350,36 +397,7 @@ body {
   }
 }
 
-.topnav {
-    overflow: hidden;
-    background-color: $menuBackground;
-    a {
-      float: left;
-      display: block;
-      color: black;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: 17px;
 
-      &:hover {
-        background-color: #ddd;
-        color: black;
-      }
-      &.active{
-        background-color: $highlight;
-        color: white;
-      }
-  }
-    input[type=text] {
-      float: right;
-      padding: 6px;
-      border: none;
-      margin-top: 8px;
-      margin-right: 16px;
-      font-size: 17px;
-  }
-}
 
 
 @media screen and (max-width: 736px) {
@@ -389,9 +407,6 @@ body {
         width: 100%;
         margin: 0;
         padding: 14px;
-    }
-    .topnav input[type=text] {
-        border: 1px solid #ccc;
     }
 }
 
