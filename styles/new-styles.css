@@ -254,12 +254,12 @@ header {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  float: right;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%; }
   .edu-links h4 {
-    padding: 1rem 4rem 6rem; }
+    padding: 1rem 2rem 3rem; }
     .edu-links h4 a i {
       padding: 1rem; }
 
