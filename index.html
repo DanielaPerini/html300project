@@ -17,7 +17,8 @@
     <link rel="stylesheet" type="text/css" href="styles/new-styles.css">
     <link rel="stylesheet" type="text/css" href="styles/reset.css">
     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300|Old+Standard+TT:700" rel="stylesheet">
-    
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="components.js"></script>
     
     <!-- facebook tags -->
     <meta property="og:title" content="FESC Florida Energy Systems Consortium">
@@ -59,21 +60,8 @@
   </head>
 
   <body>
-    <header>
-      <img srcset="img/logo-large.png 90w, img/logo-medium.png 75w, img/logo-small.png 50w"
-         sizes="(max-width: 400px) 50px, (max-width: 736px) 75px, (min-width: 737px) 90px"
-         src="img/logo-large.png" 
-         alt="FESC logo">
-      <nav>
-      <ul class="topnav">
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="research.html">FESC Research</a></li>
-        <li><a href="education.html">Education</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li class="lastNav"><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    </header>
+    <div id="app">
+    <app-header></app-header>
     
     <div class="main-wrapper">
 
@@ -89,15 +77,15 @@
       <div class="main-wrapper">
       <p>Overarching to the Consortium’s research strategy is an energy systems approach to identify innovation opportunities, prepare an energy workforce, and guide economic development.
 
-Through collaborative research and development across the State University System and the industry, the goal of the consortium is to become a world leader in energy research, education, technology, and energy systems analysis. In so doing, the consortium shall:<br>
+      Through collaborative research and development across the State University System and the industry, the goal of the consortium is to become a world leader in energy research, education, technology, and energy systems analysis. In so doing, the consortium shall:<br>
 
-(a) Coordinate and initiate increased collaborative interdisciplinary energy research among the universities and the energy industry. <br>
+      (a) Coordinate and initiate increased collaborative interdisciplinary energy research among the universities and the energy industry. <br>
 
-(b) Assist in the creation and development of a Florida-based energy technology industry through efforts that would expedite commercialization of innovative energy technologies by taking advantage of the energy expertise within the State University System, high-technology incubators, industrial parks, and industry-driven research centers. <br>
+      (b) Assist in the creation and development of a Florida-based energy technology industry through efforts that would expedite commercialization of innovative energy technologies by taking advantage of the energy expertise within the State University System, high-technology incubators, industrial parks, and industry-driven research centers. <br>
 
-(c) Provide a state resource for objective energy systems analysis. <br>
+      (c) Provide a state resource for objective energy systems analysis. <br>
 
-(d) Develop education and outreach programs to prepare a qualified energy workforce and informed public.</p>
+      (d) Develop education and outreach programs to prepare a qualified energy workforce and informed public.</p>
       </div>
       <div class="summit">
         <img srcset="img/summit-large.png 90w, img/summit-medium.png 75w, img/summit-small.png 50w, img/summit-smaller.png 25w"
@@ -106,12 +94,10 @@ Through collaborative research and development across the State University Syste
           alt="FESC summit">
       </div>
     <div class="footer-wrapper">
-      <footer>
-        <a class="twitter-share-button" href="Check%20the%20new%20FESC%20website!%20https%3A%2F%2Fdanielaperini.github.io%2Fhtml300project%2Findex.html">Tweet</a>
-
-       <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdanielaperini.github.io%2Fhtml300project%2Findex.html&layout=button&size=small&mobile_iframe=true&width=59&height=20&appId" width="59" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-
-      </footer>
+      <app-footer></app-footer>
     </div>
+    </div>
+    <script src="styles/components.js"></script>
+    <script src="styles/main-vue.js"></script>
   </body>
 </html>
